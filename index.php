@@ -9,11 +9,21 @@
     <title>index</title>
 </head>
 <body>
-    <a href="./form.php">
-        vai alla pagina Form
-    </a>
+    <div>
+        <a href="./form.php">
+            vai alla pagina Form
+        </a>
+    </div>
+    <div>
     <?php 
         echo $text;
+        echo '<br>';
+        echo strlen($text);
+        echo '<br>';
+        echo str_replace('domenico','***',$text);
+        echo '<br>';
+        echo strlen(str_replace('domenico','***',$text));
     ?>
+    </div>
 </body>
 </html>
